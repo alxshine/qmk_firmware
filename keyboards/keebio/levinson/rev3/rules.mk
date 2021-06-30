@@ -1,4 +1,4 @@
-BACKLIGHT_ENABLE = yes
+BACKLIGHT_ENABLE = no
 
 # Disable unsupported hardware
 RGBLIGHT_SUPPORTED = no
