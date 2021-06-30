@@ -9,7 +9,7 @@ MCU = atmega32u4
 #   QMK DFU      qmk-dfu
 #   ATmega32A    bootloadHID
 #   ATmega328P   USBasp
-BOOTLOADER = caterina
+BOOTLOADER = atmel-dfu
 
 # Build Options
 #   change to "no" to disable the options, or define them in the Makefile in
@@ -34,4 +34,4 @@ SLEEP_LED_ENABLE = no    # Breathing sleep LED during USB suspend
 SPLIT_KEYBOARD = yes
 
 LAYOUTS = ortho_4x12
-DEFAULT_FOLDER = keebio/levinson/rev2
+DEFAULT_FOLDER = keebio/levinson/rev3
