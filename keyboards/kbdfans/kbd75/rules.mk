@@ -1,1 +1,3 @@
 DEFAULT_FOLDER = kbdfans/kbd75/rev1
+RGBLIGHT_ENABLE = no
+AUDIO_ENABLE = no
