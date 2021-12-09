@@ -13,5 +13,4 @@ RGBLIGHT_ENABLE = yes       # Enable WS2812 RGB underlight.
 
 SPLIT_KEYBOARD = yes
 
-DEFAULT_FOLDER = keebio/quefrency/rev1
-LTO_ENABLE = yes
+DEFAULT_FOLDER = keebio/quefrency/rev4
