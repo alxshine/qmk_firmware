@@ -55,22 +55,24 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_NO        , KC_NO  , KC_NO         , KC_NO  , KC_F1  , KC_F2  ,  KC_F3 , KC_NO  , KC_NO , KC_LSFT, KC_LSFT, KC_NO  , KC_LSFT, KC_NO  , KC_NO  , KC_NO  , KC_NO  ,
             KC_NO        , KC_NO  , KC_NO         , KC_NO  , KC_F4  , KC_F5  , KC_F6  , KC_NO  , KC_NO , KC_LCTL, KC_LCTL, KC_NO  , KC_LCTL, KC_NO  , KC_NO  , KC_NO  ,
             KC_NO        , KC_NO  , KC_NO         , KC_NO  , KC_F7  , KC_F8  , KC_F9  , KC_NO  , KC_NO , KC_LALT, KC_LALT, KC_NO  , KC_LALT, KC_NO  , KC_NO  , KC_NO  ,
-            KC_NO        , KC_NO  , KC_NO         , KC_NO  , KC_F10 , KC_F11 , KC_F12 , KC_NO  , KC_NO , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO
+            KC_WH_U        , KC_NO  , KC_NO         , KC_NO  , KC_F10 , KC_F11 , KC_F12 , KC_NO  , KC_NO , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO
     )
 };
 
 bool encoder_update_user(uint8_t index, bool clockwise) {
-    if (!index) {
+    if (index == 0) { // left encoder
         if (clockwise) {
             tap_code(KC_VOLU);
         } else {
             tap_code(KC_VOLD);
         }
-    } else {
+    } else { // right encoder
         if (clockwise) {
-            tap_code(KC_MS_WH_DOWN);
+            tap_code(KC_WH_D);
+            tap_code(KC_VOLU);
         } else {
-            tap_code(KC_MS_WH_UP);
+            tap_code(KC_WH_U);
+            tap_code(KC_VOLD);
         }
     }
     return true;
