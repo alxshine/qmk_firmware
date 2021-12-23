@@ -69,10 +69,8 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
     } else { // right encoder
         if (clockwise) {
             tap_code(KC_WH_D);
-            tap_code(KC_VOLU);
         } else {
             tap_code(KC_WH_U);
-            tap_code(KC_VOLD);
         }
     }
     return true;
