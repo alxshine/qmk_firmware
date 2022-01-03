@@ -23,12 +23,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_NO        , KC_NO  , KC_TRNS       , KC_NO  , KC_NO  , KC_NO  , RESET  , KC_NO  , KC_NO , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO
     ),
 	[3] = LAYOUT_65_with_macro( // numpad on right
-            KC_MUTE      , KC_NO  , KC_NO         , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO , KC_NO  , KC_NO  , KC_NO  , KC_SLSH, KC_NO  , KC_NO  , KC_DEL , KC_BSPC, KC_HOME,
-            KC_NO        , KC_NO  , KC_NO         , KC_NO  , KC_UP  , KC_NO  , KC_DOWN, KC_NO  , KC_NO , KC_1   , KC_2   , KC_3   , KC_ASTR, KC_NO  , KC_NO  , KC_NO  , KC_NO  ,
-            KC_NO        , KC_NO  , KC_NO         , KC_NO  , KC_LEFT, KC_NO  , KC_RGHT, KC_NO  , KC_NO , KC_4   , KC_5   , KC_6   , KC_PLUS, KC_NO  , KC_NO  , KC_NO  ,
-            KC_NO        , KC_NO  , KC_NO         , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO , KC_7   , KC_8   , KC_9   , KC_MINS, KC_NO  , KC_NO  , KC_NO  ,
-            KC_NO        , KC_NO  , KC_NO         , KC_NO  , KC_NO  , KC_LALT, KC_LCTL, KC_0   , KC_0  , KC_COMM, KC_DOT , KC_NO  , KC_NO  , KC_NO  , KC_NO
-    ),
+            KC_MUTE      , KC_NO  , KC_NO         , KC_NO   , KC_NO   , KC_NO  , KC_NO   , KC_NO  , KC_NO , KC_NO  , KC_NO  , KC_NO  , KC_SLSH, KC_NO  , KC_NO  , KC_DEL , KC_BSPC, KC_HOME,
+            KC_NO        , KC_NO  , KC_NO         , KC_LSFT , KC_LSFT , KC_NO  , KC_LSFT , KC_NO  , KC_NO , KC_1   , KC_2   , KC_3   , KC_ASTR, KC_NO  , KC_NO  , KC_NO  , KC_NO  ,
+            KC_NO        , KC_NO  , KC_NO         , KC_LCTRL, KC_LCTRL, KC_NO  , KC_LCTRL, KC_NO  , KC_NO , KC_4   , KC_5   , KC_6   , KC_PLUS, KC_NO  , KC_NO  , KC_NO  ,
+            KC_NO        , KC_NO  , KC_NO         , KC_LALT , KC_LALT , KC_NO  , KC_LALT , KC_NO  , KC_NO , KC_7   , KC_8   , KC_9   , KC_MINS, KC_NO  , KC_NO  , KC_NO  ,
+            KC_NO        , KC_NO  , KC_NO         , KC_NO   , KC_NO   , KC_LALT, KC_LGUI , KC_0   , KC_0  , KC_COMM, KC_DOT , KC_NO  , KC_NO  , KC_NO  , KC_NO) ,
 	[4] = LAYOUT_65_with_macro( // arrows on right
             KC_MUTE      , KC_NO  , KC_NO         , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_HOME,
             KC_NO        , KC_NO  , KC_NO         , KC_LSFT, KC_LSFT, KC_LSFT, KC_NO  , KC_NO  , KC_NO , KC_PGUP, KC_UP  , KC_PGDN, KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO  ,
