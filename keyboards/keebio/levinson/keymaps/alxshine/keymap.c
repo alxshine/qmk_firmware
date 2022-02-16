@@ -28,45 +28,45 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
 [_NUMPAD] = LAYOUT_ortho_4x12( \
- _______, KC_LSFT, KC_LSFT, _______, KC_LSFT, _______, /* SPLIT */ _______, KC_1, KC_2, KC_3, KC_SLSH, _______, \
- _______, KC_LCTL, KC_LCTL, _______, KC_LCTL, _______, /* SPLIT */ _______, KC_4, KC_5, KC_6, KC_ASTR, _______, \
- _______, KC_LALT, KC_LALT, _______, KC_LALT, _______, /* SPLIT */ _______, KC_7, KC_8, KC_9, KC_PLUS, _______, \
- _______, _______, _______, _______, _______, KC_LGUI, /* SPLIT */ _______, KC_0, KC_COMM, KC_DOT, KC_MINS, _______ \
+ XXXXXXX, KC_LSFT, KC_LSFT, XXXXXXX, KC_LSFT, XXXXXXX, /* SPLIT */ XXXXXXX, KC_1, KC_2, KC_3, KC_SLSH, XXXXXXX, \
+ XXXXXXX, KC_LCTL, KC_LCTL, XXXXXXX, KC_LCTL, XXXXXXX, /* SPLIT */ XXXXXXX, KC_4, KC_5, KC_6, KC_ASTR, XXXXXXX, \
+ XXXXXXX, KC_LALT, KC_LALT, XXXXXXX, KC_LALT, XXXXXXX, /* SPLIT */ XXXXXXX, KC_7, KC_8, KC_9, KC_PLUS, XXXXXXX, \
+ XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_LGUI, /* SPLIT */ XXXXXXX, KC_0, KC_COMM, KC_DOT, KC_MINS, XXXXXXX \
 ),
 
 [_ARROWS] = LAYOUT_ortho_4x12( \
- _______, KC_LSFT, KC_LSFT, KC_LSFT, _______, _______, /* SPLIT */ _______, KC_PGUP, KC_UP, KC_PGDN, _______, _______, \
- _______, KC_LCTL, KC_LCTL, KC_LCTL, _______, _______, /* SPLIT */ _______, KC_LEFT, KC_DOWN, KC_RGHT, _______, _______, \
- _______, KC_LALT, KC_LALT, KC_LALT, _______, _______, /* SPLIT */ KC_INS,  KC_BSPC, KC_DEL, KC_HOME, KC_END, _______, \
- _______, _______, _______, _______, _______, _______, /* SPLIT */ _______, _______, _______, _______, _______, _______ \
+ XXXXXXX, KC_LSFT, KC_LSFT, KC_LSFT, XXXXXXX, XXXXXXX, /* SPLIT */ XXXXXXX, KC_PGUP, KC_UP, KC_PGDN, XXXXXXX, XXXXXXX, \
+ XXXXXXX, KC_LCTL, KC_LCTL, KC_LCTL, XXXXXXX, XXXXXXX, /* SPLIT */ XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, XXXXXXX, \
+ XXXXXXX, KC_LALT, KC_LALT, KC_LALT, XXXXXXX, XXXXXXX, /* SPLIT */ KC_INS,  KC_BSPC, KC_DEL, KC_HOME, KC_END, XXXXXXX, \
+ XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, /* SPLIT */ XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX \
 ),
 
 [_FUNCS] = LAYOUT_ortho_4x12( \
- _______, _______, KC_F1, KC_F2, KC_F3, _______, /* SPLIT */    _______, KC_LSFT, KC_LSFT, _______, KC_LSFT, _______, \
- _______, _______, KC_F4, KC_F5, KC_F6, _______, /* SPLIT */    _______, KC_LCTL, KC_LCTL, _______, KC_LCTL, _______, \
- _______, _______, KC_F7, KC_F8, KC_F9, _______, /* SPLIT */    _______, KC_LALT, KC_LALT, _______, KC_LALT, _______, \
- _______, _______, KC_F10, KC_F11, KC_F12, _______, /* SPLIT */ KC_LGUI, _______, _______, _______, _______, _______ \
+ XXXXXXX, XXXXXXX, KC_F1, KC_F2, KC_F3, XXXXXXX, /* SPLIT */    XXXXXXX, KC_LSFT, KC_LSFT, XXXXXXX, KC_LSFT, XXXXXXX, \
+ XXXXXXX, XXXXXXX, KC_F4, KC_F5, KC_F6, XXXXXXX, /* SPLIT */    XXXXXXX, KC_LCTL, KC_LCTL, XXXXXXX, KC_LCTL, XXXXXXX, \
+ XXXXXXX, XXXXXXX, KC_F7, KC_F8, KC_F9, XXXXXXX, /* SPLIT */    XXXXXXX, KC_LALT, KC_LALT, XXXXXXX, KC_LALT, XXXXXXX, \
+ XXXXXXX, XXXXXXX, KC_F10, KC_F11, KC_F12, XXXXXXX, /* SPLIT */ KC_LGUI, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX \
 ),
 
 [_LOWER] = LAYOUT_ortho_4x12( \
   KC_TILD, KC_EXLM , KC_AT  , KC_HASH,  KC_DLR, KC_PERC, /* SPLIT */ KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_BSPC, \
-  KC_DEL ,  _______, KC_LCBR, KC_LPRN, KC_RPRN, KC_RCBR, /* SPLIT */ _______, KC_QUES, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE, \
-  _______, _______ , _______, KC_LBRC, KC_RBRC, _______, /* SPLIT */ _______, _______, _______, KC_HOME,  KC_END, _______, \
-  _______, _______ , _______, _______, _______, _______, /* SPLIT */ _______, _______, KC_MNXT, KC_VOLD, KC_VOLU, KC_MPLY  \
+  KC_DEL ,  XXXXXXX, KC_LCBR, KC_LPRN, KC_RPRN, KC_RCBR, /* SPLIT */ XXXXXXX, KC_QUES, KC_PLUS, KC_LCBR, KC_RCBR, KC_PIPE, \
+  XXXXXXX, XXXXXXX , XXXXXXX, KC_LBRC, KC_RBRC, XXXXXXX, /* SPLIT */ XXXXXXX, XXXXXXX, XXXXXXX, KC_HOME,  KC_END, XXXXXXX, \
+  XXXXXXX, XXXXXXX , XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, /* SPLIT */ XXXXXXX, XXXXXXX, KC_MNXT, KC_VOLD, KC_VOLU, KC_MPLY  \
 ),
 
 [_RAISE] = LAYOUT_ortho_4x12( \
   KC_GRV ,  KC_1  ,    KC_2,    KC_3,    KC_4 ,    KC_5, /* SPLIT */ KC_6, KC_7  ,    KC_8,    KC_9 ,    KC_0, KC_BSPC, \
-  KC_DEL,  _______,   _______,   _______, _______,   _______, /* SPLIT */ _______, KC_SLSH, KC_EQL ,  KC_LBRC, KC_RBRC, KC_BSLS, \
-  _______, _______,   _______,   _______, _______,  _______, /* SPLIT */  _______, _______ , _______, KC_PGUP , KC_PGDN, _______, \
-  _______, _______, _______, _______, _______, _______, /* SPLIT */   _______, _______  , KC_MNXT, KC_VOLD , KC_VOLU, KC_MPLY \
+  KC_DEL,  XXXXXXX,   XXXXXXX,   XXXXXXX, XXXXXXX,   XXXXXXX, /* SPLIT */ XXXXXXX, KC_SLSH, KC_EQL ,  KC_LBRC, KC_RBRC, KC_BSLS, \
+  XXXXXXX, XXXXXXX,   XXXXXXX,   XXXXXXX, XXXXXXX,  XXXXXXX, /* SPLIT */  XXXXXXX, XXXXXXX , XXXXXXX, KC_PGUP , KC_PGDN, XXXXXXX, \
+  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, /* SPLIT */   XXXXXXX, XXXXXXX  , KC_MNXT, KC_VOLD , KC_VOLU, KC_MPLY \
 ),
 
 [_ADJUST] =  LAYOUT_ortho_4x12( \
-  _______, RESET  , _______, _______, _______ , _______ , /* SPLIT */ _______, _______     , _______     , _______, _______, KC_DEL , \
-  _______, _______, _______,   AU_ON,   AU_OFF,  AG_NORM, /* SPLIT */ AG_SWAP, TO(_DVORAK) , TO(_QWERTY) , _______, _______, RESET  ,  \
-  _______, _______, _______, _______, _______ , _______ , /* SPLIT */ _______, _______     , _______     , _______, _______, _______, \
-  _______, _______, _______, _______, _______ , _______ , /* SPLIT */ _______, _______     , _______     , _______, _______, _______ \
+  XXXXXXX, RESET  , XXXXXXX, XXXXXXX, XXXXXXX , XXXXXXX , /* SPLIT */ XXXXXXX, XXXXXXX     , XXXXXXX     , XXXXXXX, XXXXXXX, KC_DEL , \
+  XXXXXXX, XXXXXXX, XXXXXXX,   AU_ON,   AU_OFF,  AG_NORM, /* SPLIT */ AG_SWAP, TO(_DVORAK) , TO(_QWERTY) , XXXXXXX, XXXXXXX, RESET  ,  \
+  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX , XXXXXXX , /* SPLIT */ XXXXXXX, XXXXXXX     , XXXXXXX     , XXXXXXX, XXXXXXX, XXXXXXX, \
+  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX , XXXXXXX , /* SPLIT */ XXXXXXX, XXXXXXX     , XXXXXXX     , XXXXXXX, XXXXXXX, XXXXXXX \
 ),
 
 [_QWERTY] = LAYOUT_ortho_4x12( \
@@ -77,9 +77,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
 [_TEMPLATE] = LAYOUT_ortho_4x12( \
- _______, _______, _______, _______, _______, _______, /* SPLIT */ _______, _______, _______, _______, _______, _______, \
- _______, _______, _______, _______, _______, _______, /* SPLIT */ _______, _______, _______, _______, _______, _______, \
- _______, _______, _______, _______, _______, _______, /* SPLIT */ _______,  _______, _______, _______, _______, _______, \
- _______, _______, _______, _______, _______, _______, /* SPLIT */ _______, _______, _______, _______, _______, _______ \
+ XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, /* SPLIT */ XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+ XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, /* SPLIT */ XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+ XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, /* SPLIT */ XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+ XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, /* SPLIT */ XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX \
 ),
 };
