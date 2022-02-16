@@ -24,7 +24,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  KC_TAB, KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y,                           /* SPLIT */ KC_F, KC_G, KC_C, KC_R, KC_L, KC_BSPC, \
  LCTL_T(KC_ESC), KC_A, KC_O, LT(_NUMPAD, KC_E), LT(_ARROWS, KC_U), KC_I, /* SPLIT */ KC_D, KC_H, KC_T, LT(_FUNCS, KC_N), KC_S, KC_MINS, \
  KC_LSFT, KC_SCLN, KC_Q, KC_J, KC_K, KC_X,                               /* SPLIT */ KC_B, KC_M, KC_W, KC_V, KC_Z, KC_ENT, \
- MO(_ADJUST), KC_LCTL, KC_LALT, KC_LGUI, LT(_LOWER, KC_BSPC), LGUI_T(KC_SPC),             /* SPLIT */ LGUI_T(KC_SPC), LT(_RAISE, KC_DEL), KC_LEFT, KC_DOWN, KC_UP, KC_RGHT \
+ MO(_ADJUST), KC_LCTL, KC_LALT, KC_LGUI, _LWR, KC_SPC,                   /* SPLIT */ KC_SPC, _RSE, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT \
 ),
 
 [_NUMPAD] = LAYOUT_ortho_4x12( \
