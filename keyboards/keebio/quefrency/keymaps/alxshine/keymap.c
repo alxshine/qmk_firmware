@@ -13,12 +13,19 @@
 #define _LWR MO(_LOWER)
 #define _RSE MO(_RAISE)
 
+#define LAYOUT_65wm_wrapped(...) LAYOUT_65_with_macro(__VA_ARGS__)
+
+#define DV_LN KC_GRV, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6
+#define DV_L1 KC_TAB, KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y
+#define DV_L2 LCTL_T(KC_ESC), KC_A, KC_O, LT(_ADJUST, KC_E), LT(_ARROWS, KC_U), KC_I
+#define DV_L3 KC_LSFT, KC_SCLN, KC_Q, KC_J, KC_K, KC_X
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    [_DVORAK] = LAYOUT_65_with_macro( // dvorak
-            KC_MUTE, KC_MPLY, /* MACRO_LEFT */ KC_GRV        , KC_1    , KC_2    , KC_3      , KC_4      , KC_5   , KC_6/*   SPLIT    */ , KC_7   , KC_8      , KC_9   , KC_0      , KC_LBRC, KC_RBRC, KC_DEL ,          /* MACRO_RIGHT */ KC_BSPC, KC_HOME,
-            KC_MPRV, KC_MNXT, /* MACRO_LEFT */ KC_TAB        , KC_QUOT , KC_COMM , KC_DOT    , KC_P      , KC_Y ,/*   SPLIT    */ KC_F, KC_G, KC_C   , KC_R      , KC_L   , KC_SLSH   , KC_EQL ,                            /* MACRO_RIGHT */ KC_BSLS, KC_PGUP,
-            _______, _______, /* MACRO_LEFT */ LCTL_T(KC_ESC), KC_A    , KC_O    , LT(_ADJUST,KC_E), LT(_ARROWS,KC_U), KC_I  /*   SPLIT    */ , KC_D   , LT(6,KC_H), KC_T   , LT(7,KC_N), KC_S   , KC_MINS,                   /* MACRO_RIGHT */ KC_ENT , KC_PGDN,
-            KC_CUT , KC_COPY, /* MACRO_LEFT */ KC_LSFT       , KC_SCLN , KC_Q    , KC_J      , KC_K      , KC_X  /*   SPLIT    */ , KC_B   , KC_M      , KC_W   , KC_V      , KC_Z   , KC_RSFT,                   /* MACRO_RIGHT */ KC_UP  , KC_END,
+    [_DVORAK] = LAYOUT_65wm_wrapped( // dvorak
+            KC_MUTE, KC_MPLY, /* MACRO_LEFT */ DV_LN, /* SPLIT */ KC_7   , KC_8      , KC_9   , KC_0      , KC_LBRC, KC_RBRC, KC_DEL ,          /* MACRO_RIGHT */ KC_BSPC, KC_HOME,
+            KC_MPRV, KC_MNXT, /* MACRO_LEFT */ DV_L1, /* SPLIT */ KC_F, KC_G, KC_C   , KC_R      , KC_L   , KC_SLSH   , KC_EQL ,                            /* MACRO_RIGHT */ KC_BSLS, KC_PGUP,
+            _______, _______, /* MACRO_LEFT */ DV_L2, /* SPLIT */ KC_D   , LT(6,KC_H), KC_T   , LT(7,KC_N), KC_S   , KC_MINS,                   /* MACRO_RIGHT */ KC_ENT , KC_PGDN,
+            KC_CUT , KC_COPY, /* MACRO_LEFT */ DV_L3, /* SPLIT */ KC_B   , KC_M      , KC_W   , KC_V      , KC_Z   , KC_RSFT,                   /* MACRO_RIGHT */ KC_UP  , KC_END,
             _______, KC_PSTE, /* MACRO_LEFT */ TO(2)         , KC_LCTL , KC_LGUI , KC_LALT   , KC_SPC    , KC_SPC/*   SPLIT    */ , KC_SPC , KC_RALT   , KC_RCTL, _______   , KC_LEFT,                            /* MACRO_RIGHT */ KC_DOWN, KC_RGHT
     ),
 	[_QWERTY] = LAYOUT_65_with_macro( // qwerty
