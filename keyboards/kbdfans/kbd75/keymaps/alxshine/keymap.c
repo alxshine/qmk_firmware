@@ -13,7 +13,12 @@
      * 14
      * 15
      * 12
-**/
+ */
+
+/**
+ * TODO: add delete and backspace on arrow layer
+ * TODO: add FN key layer for quicker access
+ */
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	LAYOUT( // qwerty
