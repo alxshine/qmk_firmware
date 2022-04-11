@@ -51,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 	[6] = LAYOUT_65_with_macro( // parens, braces, brackets
             KC_MUTE,  _______,  /* MACRO_LEFT*/ _______       , _______ , _______ , _______, _______ , _______, _______, _______, _______, _______, _______, _______, _______, _______, /*MACRO_RIGHT */ _______,  KC_HOME, 
-            _______,  _______,  /* MACRO_LEFT*/ _______       , _______ , S(KC_1) , KC_BSLS, _______ , _______, _______, _______, KC_LSFT, KC_LSFT, KC_LSFT, _______, _______,          /*MACRO_RIGHT */ _______,  _______, 
+            _______,  _______,  /* MACRO_LEFT*/ _______       , _______ , S(KC_1) , KC_BSLS, S(KC_3) , _______, _______, _______, KC_LSFT, KC_LSFT, KC_LSFT, _______, _______,          /*MACRO_RIGHT */ _______,  _______, 
             _______,  _______,  /* MACRO_LEFT*/ _______       , _______ , KC_LCBR , KC_LPRN, KC_RPRN , KC_RCBR, _______, KC_TRNS, KC_LCTL, KC_LCTL, KC_LCTL, _______,                   /*MACRO_RIGHT */ _______,  _______, 
             _______,  _______,  /* MACRO_LEFT*/ _______       , _______ , _______ , KC_LBRC, KC_RBRC , _______, _______, _______, KC_LALT, KC_LALT, KC_LALT, _______,                   /*MACRO_RIGHT */ _______,  _______, 
             _______,  _______,  /* MACRO_LEFT*/ _______       , _______ , _______ , _______, _______ , _______, _______, _______, _______, _______, _______,                            /*MACRO_RIGHT */ _______,  _______
