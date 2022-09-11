@@ -33,6 +33,7 @@ enum planck_layers {
   _LAYER6,
   _LAYER7,
   _LAYER8,
+  _LAYER9,
 };
 
 #define LOWER MO(_LOWER)
@@ -41,7 +42,7 @@ enum planck_layers {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BASE] = LAYOUT_planck_grid(
     KC_TAB,         KC_QUOTE,       KC_COMMA,       KC_DOT,         KC_P,           KC_Y,           KC_F,           KC_G,           KC_C,           KC_R,           KC_L,           KC_BSPACE,      
-    MT(MOD_LCTL, KC_ESCAPE),KC_A,           KC_O,           LT(5,KC_E),     LT(7,KC_U),     KC_I,           KC_D,           KC_H,           KC_T,           LT(8,KC_N),     KC_S,           KC_MINUS,       
+    MT(MOD_LCTL, KC_ESCAPE),KC_A,           KC_O,           LT(5,KC_E),     LT(7,KC_U),     KC_I,           KC_D,           LT(9,KC_H),           KC_T,           LT(8,KC_N),     KC_S,           KC_MINUS,       
     KC_LSHIFT,      KC_SCOLON,      KC_Q,           KC_J,           KC_K,           KC_X,           KC_B,           KC_M,           KC_W,           KC_V,           KC_Z,           KC_ENTER,       
     TO(4),          KC_LCTRL,       KC_LALT,        KC_LGUI,        LOWER,          KC_SPACE,       KC_NO,          RAISE,          KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT
   ),
@@ -83,7 +84,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LAYER6] = LAYOUT_planck_grid(
     KC_TRANSPARENT, KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_LBRACKET,    
-    KC_TRANSPARENT, KC_A,           KC_S,           KC_D,           KC_F,           KC_G,           KC_H,           KC_J,           KC_K,           KC_L,           KC_SCOLON,      KC_QUOTE,       
+    KC_BSPACE,      KC_A,           KC_S,           KC_D,           KC_F,           KC_G,           KC_H,           KC_J,           KC_K,           KC_L,           KC_SCOLON,      KC_QUOTE,       
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_C,           KC_V,           KC_TRANSPARENT, KC_NO,          KC_N,           KC_M,           KC_TRANSPARENT, KC_TRANSPARENT, TO(0)
   ),
@@ -100,6 +101,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRANSPARENT, KC_F5,          KC_F6,          KC_F7,          KC_F8,          KC_TRANSPARENT, KC_TRANSPARENT, KC_LCTRL,       KC_LCTRL,       KC_TRANSPARENT, KC_LCTRL,       KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_F9,          KC_F10,         KC_F11,         KC_F12,         KC_TRANSPARENT, KC_TRANSPARENT, KC_LALT,        KC_LALT,        KC_TRANSPARENT, KC_LALT,        KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_NO,          KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT
+  ),
+  [_LAYER9] = LAYOUT_planck_grid(
+    KC_TILD,        KC_EXLM,        KC_AT,          KC_HASH,        KC_DLR,         KC_PERC,        KC_CIRC,        KC_AMPR,        KC_ASTR,        KC_LPRN,        KC_RPRN,        KC_TRANSPARENT, 
+    KC_DELETE,      KC_TRANSPARENT, KC_LCBR,        KC_LPRN,        KC_RPRN,        KC_RCBR,        KC_TRANSPARENT, KC_QUES,        KC_PLUS,        KC_LCBR,        KC_RCBR,        KC_PIPE,        
+    KC_TRANSPARENT, KC_DQUO,        KC_QUOTE,       KC_LBRACKET,    KC_RBRACKET,    KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_HOME,        KC_END,         KC_TRANSPARENT, 
+    TO(6),          KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_NO,          KC_TRANSPARENT, KC_MEDIA_NEXT_TRACK,KC_AUDIO_VOL_DOWN,KC_AUDIO_VOL_UP,KC_MEDIA_PLAY_PAUSE
   ),
 
 };
