@@ -1,2 +1,3 @@
 MOUSEKEY_ENABLE = yes
 EXTRAFLAGS += -flto
+ENCODER_ENABLE = yes
