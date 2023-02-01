@@ -43,7 +43,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     	KC_NO, KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO, KC_NO, KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO, KC_NO, KC_NO, KC_NO,
     	KC_NO, KC_NO  , KC_LSFT, KC_LSFT, KC_LSFT, KC_NO, KC_NO, KC_NO  , KC_WH_U, KC_UP  , KC_WH_D, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
     	KC_NO, KC_LCTL, KC_LCTL, KC_LCTL, KC_NO  , KC_NO, KC_NO, KC_LEFT, KC_DOWN, KC_RGHT, KC_NO  , KC_NO, KC_NO, KC_NO, KC_NO,
-    	KC_NO, KC_LALT, KC_LALT, KC_LALT, KC_NO  , KC_NO, KC_NO, KC_BSPC, KC_DEL , KC_HOME, KC_END , KC_NO, KC_NO, KC_NO, KC_NO,
+    	KC_NO, KC_LALT, KC_LALT, KC_LALT, KC_SPC , KC_SPC, KC_SPC, KC_BSPC, KC_DEL , KC_HOME, KC_END , KC_NO, KC_NO, KC_NO, KC_NO,
 
     	KC_NO, KC_NO  , KC_NO  , KC_LGUI, KC_NO  , KC_NO, KC_NO, KC_NO  , KC_NO  , KC_NO  , KC_NO),
 	LAYOUT( // numpad on right
@@ -54,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO, KC_LCTL, KC_LCTL, KC_TRNS, KC_LCTL     , KC_NO, KC_NO  , KC_4  , KC_5 , KC_6 , KC_ASTR, KC_NO  , KC_ENT, KC_NO  ,
         KC_NO, KC_LALT, KC_LALT, KC_LALT, KC_LALT     , KC_NO, KC_NO  , KC_NO , KC_7 , KC_8 , KC_9   , KC_SLSH, KC_NO , KC_NO  , KC_NO  ,
 
-        KC_NO, KC_NO  , KC_NO  , KC_NO  , LGUI_T(KC_0), KC_NO, KC_COMM, KC_DOT, KC_NO, KC_NO, KC_NO  , KC_NO
+        KC_NO, KC_NO  , KC_NO  , KC_NO  , KC_LGUI     , KC_NO, KC_COMM, KC_DOT, KC_NO, KC_NO, KC_NO  , KC_NO
      ),
 	LAYOUT( // paren, brace, and bracket on left
     	KC_NO, KC_NO, KC_NO  , KC_NO  , KC_NO  , KC_NO  , KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO , KC_NO, KC_NO, KC_NO, KC_NO, 

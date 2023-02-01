@@ -1,12 +1,5 @@
 #include QMK_KEYBOARD_H
 
-#define _DVORAK 0
-#define _QWERTY 1
-#define _NUMPAD 2
-#define _ARROWS 3
-#define _FUNCS 4
-#define _ADJUST 5
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT_65_with_macro( // dvorak
             KC_MUTE,  KC_MPLY,  /*   */ KC_GRV        , KC_1    , KC_2    , KC_3       , KC_4          , KC_5   , KC_6   , KC_7       , KC_8   , KC_9       , KC_0   , KC_LBRC, KC_RBRC, KC_DEL , KC_BSPC,  /*   */ KC_HOME, 
