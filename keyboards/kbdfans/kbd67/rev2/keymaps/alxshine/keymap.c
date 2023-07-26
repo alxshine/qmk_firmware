@@ -69,3 +69,48 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
     ), 
 };
+
+#ifdef RGBLIGHT_ENABLE
+void keyboard_post_init_user(void) {
+  rgblight_enable_noeeprom(); // Enables RGB, without saving settings
+  rgblight_sethsv_noeeprom(HSV_GREEN);
+  rgblight_mode_noeeprom(RGBLIGHT_MODE_BREATHING);
+}
+
+layer_state_t layer_state_set_user(layer_state_t state) {
+  switch (biton32(state)){
+    case _DVORAK:
+      rgblight_sethsv_noeeprom(HSV_GREEN);
+      rgblight_mode_noeeprom(RGBLIGHT_MODE_BREATHING);
+      break;
+    case _QWERTY:
+      rgblight_mode_noeeprom(RGBLIGHT_MODE_RAINBOW_SWIRL);
+      break;
+    case _ADJUST:
+      rgblight_mode_noeeprom(RGBLIGHT_MODE_KNIGHT);
+      break;
+    case _NUMPAD:
+      rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
+      rgblight_sethsv_noeeprom(HSV_BLUE);
+      break;
+    case _ARROWS:
+      rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
+      rgblight_sethsv_noeeprom(HSV_RED);
+      break;
+    case _FUNCSL:
+      rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
+      rgblight_sethsv_noeeprom(HSV_YELLOW);
+      break;
+    case _PARENS:
+      rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
+      rgblight_sethsv_noeeprom(HSV_PURPLE);
+      break;
+    case _MEDIAR:
+      rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
+      rgblight_sethsv_noeeprom(HSV_CYAN);
+      break;
+  }
+
+  return state;
+}
+#endif
