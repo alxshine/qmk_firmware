@@ -1,16 +1,3 @@
-# MCU name
-MCU = atmega32u4
-
-# Bootloader selection
-#   Teensy       halfkay
-#   Pro Micro    caterina
-#   Atmel DFU    atmel-dfu
-#   LUFA DFU     lufa-dfu
-#   QMK DFU      qmk-dfu
-#   ATmega32A    bootloadHID
-#   ATmega328P   USBasp
-BOOTLOADER = atmel-dfu
-
 # Build Options
 #   change yes to no to disable
 #
@@ -26,5 +13,4 @@ RGBLIGHT_ENABLE = no        # Enable WS2812 RGB underlight.
 
 SPLIT_KEYBOARD = yes
 
-LAYOUTS = ortho_4x12
-DEFAULT_FOLDER = keebio/levinson/rev3
+DEFAULT_FOLDER = keebio/levinson/rev2
