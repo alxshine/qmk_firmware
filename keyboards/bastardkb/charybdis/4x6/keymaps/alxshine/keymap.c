@@ -44,7 +44,7 @@ LCTL_T(KC_ESC),   KC_QUOT, KC_COMM, KC_DOT,  KC_P,    KC_Y,       KC_F,    KC_G,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_LCTL,   KC_SCLN, KC_Q,    KC_J,    KC_K,    KC_X,       KC_B,    KC_M,    KC_W,    KC_V,    KC_Z, KC_LALT,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
-                             KC_SPC, LGUI_T(KC_BSPC), LOWER,     RAISE,  KC_ENT,
+                             LGUI_T(KC_BSPC), KC_SPC, LOWER,     RAISE,  KC_ENT,
                                            KC_LALT, KC_BSPC,     KC_ENT
   //                            ╰───────────────────────────╯ ╰──────────────────╯
   ),
