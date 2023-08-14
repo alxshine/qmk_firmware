@@ -65,10 +65,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
 LCTL_T(KC_ESC),   KC_A,    KC_O,    NUMPAD,    ARROW,   KC_I,     KC_D,    PARENS,  KC_T,    FUNCS,    KC_S, KC_MINS,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_LSFT,   KC_SCLN, KC_Q,    KC_J,    KC_K,    KC_X,       KC_B,    KC_M,    KC_W,    KC_V,    KC_Z, KC_LSFT,
+       KC_LSFT,   KC_SCLN, KC_Q,    KC_J,    KC_K,    KC_X,       KC_B,    KC_M,    KC_W,    KC_V,    KC_Z, KC_RSFT,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
-                      LALT_T(KC_BSPC), LGUI_T(KC_SPC), LOWER,     KC_ENT,  KC_ENT,
-                                           KC_TAB,  POINTER,     KC_LALT
+                      LALT_T(KC_BSPC), LGUI_T(KC_SPC), LOWER,     RAISE,  KC_ENT,
+                                           KC_TAB,  POINTER,     KC_BTN1
   //                            ╰───────────────────────────╯ ╰──────────────────╯
   ),
 
@@ -76,11 +76,11 @@ LCTL_T(KC_ESC),   KC_A,    KC_O,    NUMPAD,    ARROW,   KC_I,     KC_D,    PAREN
   // ╭──────────────────────────────────────────────────────╮ ╭──────────────────────────────────────────────────────╮
        KC_TILD, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,    KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_UNDS,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       RGB_MOD, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    KC_LBRC,   KC_P7,   KC_P8,   KC_P9, G(S(A(KC_C))), KC_VOLU,
+       KC_TRNS, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    KC_LBRC,   KC_HASH, KC_ASTR,   KC_P9, G(S(A(KC_C))), KC_VOLU,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       RGB_TOG, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX,    KC_PPLS,   KC_BTN1, KC_BTN2, KC_P6, KC_PMNS, KC_MUTE,
+       KC_TRNS, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX,    KC_PPLS,   S(KC_EQL), KC_EQL, KC_PMNS, KC_BSLS, KC_MUTE,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-      RGB_RMOD, XXXXXXX, XXXXXXX, XXXXXXX, EE_CLR,  QK_BOOT,    KC_PAST,   KC_MPLY, KC_MPRV, KC_MNXT, G(S(A(KC_R))), KC_VOLD,
+       KC_TRNS, XXXXXXX, XXXXXXX, XXXXXXX, EE_CLR,  QK_BOOT,    KC_PAST,   KC_BSPC, KC_DEL, KC_MNXT, G(S(A(KC_R))), KC_VOLD,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                   XXXXXXX, XXXXXXX, _______,    XXXXXXX, _______,
                                            XXXXXXX, XXXXXXX,      KC_P0
@@ -93,9 +93,9 @@ LCTL_T(KC_ESC),   KC_A,    KC_O,    NUMPAD,    ARROW,   KC_I,     KC_D,    PAREN
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_MNXT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_VOLU,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_MPLY, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    XXXXXXX, KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI, KC_MUTE,
+       KC_MPLY, XXXXXXX, KC_MPRV, KC_MNXT, KC_MPLY, XXXXXXX,    XXXXXXX, KC_RSFT, KC_RCTL, KC_RALT, KC_RGUI, KC_MUTE,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_MPRV, KC_HOME, KC_PGUP, KC_PGDN,  KC_END, XXXXXXX,    QK_BOOT, EE_CLR,  XXXXXXX, XXXXXXX, XXXXXXX, KC_VOLD,
+       KC_MPRV, KC_HOME, KC_PGUP, KC_PGDN,  KC_END, XXXXXXX,    QK_BOOT, KC_VOLU, KC_VOLD, XXXXXXX, XXXXXXX, KC_VOLD,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                                   KC_MPLY, _______, XXXXXXX,    _______, XXXXXXX,
                                            _______, _______,    XXXXXXX
@@ -121,11 +121,11 @@ LCTL_T(KC_ESC),   KC_A,    KC_O,    NUMPAD,    ARROW,   KC_I,     KC_D,    PAREN
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_MNXT, KC_LSFT, KC_LSFT, KC_LSFT, KC_LSFT, XXXXXXX,    XXXXXXX, KC_P1, KC_P2,   KC_P3, KC_PMNS, KC_VOLU,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_MPLY, KC_LCTL, KC_LCTL, _______, KC_LCTL, XXXXXXX,    XXXXXXX, KC_P4, KC_P5,   KC_P6, KC_PPLS, KC_MUTE,
+       KC_MPLY, KC_LCTL, KC_LCTL, _______, KC_LCTL, XXXXXXX,    XXXXXXX, KC_P4, KC_P5,   KC_P6, KC_PPLS, KC_BSLS,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_MPRV, KC_LALT, KC_LALT, KC_LALT,  KC_LALT, XXXXXXX,   XXXXXXX, KC_P7, KC_P8,   KC_P9, KC_DOT, KC_COMM,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
-                                  _______, _______, XXXXXXX,    KC_NUM, KC_P0,
+                                  _______, KC_LGUI, XXXXXXX,    KC_NUM, KC_P0,
                                            _______, _______,    KC_ENT
   //                            ╰───────────────────────────╯ ╰──────────────────╯
   ),
