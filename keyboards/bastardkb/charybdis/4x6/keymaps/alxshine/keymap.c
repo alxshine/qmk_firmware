@@ -31,7 +31,7 @@ enum charybdis_keymap_layers {
 /** \brief Automatically enable sniping-mode on the pointer layer. */
 #define CHARYBDIS_AUTO_SNIPING_ON_LAYER LAYER_POINTER
 #define POINTING_DEVICE_ENABLE 1
-#define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE 1
+#define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE 
 #define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_TIMEOUT_MS 200
 
 #ifdef CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
@@ -52,7 +52,7 @@ static uint16_t auto_pointer_layer_timer = 0;
 #define NUMPAD LT(LAYER_NUMPAD, KC_E)
 #define FUNCS LT(LAYER_FUNCS, KC_N)
 #define PARENS LT(LAYER_PARENS, KC_H)
-#define POINTER TT(LAYER_POINTER)
+#define POINTER LT(LAYER_POINTER,KC_DOT)
 #define DEFAULT TO(LAYER_BASE)
 
 // clang-format off
@@ -61,14 +61,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ╭──────────────────────────────────────────────────────╮ ╭──────────────────────────────────────────────────────╮
         KC_GRV,   KC_1,    KC_2,    KC_3,    KC_4,    KC_5,       KC_6,    KC_7,    KC_8,    KC_9,    KC_0, KC_MINS,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-        KC_TAB,   KC_QUOT, KC_COMM, KC_DOT,  KC_P,    KC_Y,       KC_F,    KC_G,    KC_C,    KC_R,    KC_L, KC_SLSH,
+        KC_TAB,   KC_QUOT, KC_COMM, POINTER,  KC_P,    KC_Y,       KC_F,    KC_G,    KC_C,    KC_R,    KC_L, KC_SLSH,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
 LCTL_T(KC_ESC),   KC_A,    KC_O,    NUMPAD,    ARROW,   KC_I,     KC_D,    PARENS,  KC_T,    FUNCS,    KC_S, KC_MINS,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_LSFT,   KC_SCLN, KC_Q,    KC_J,    KC_K,    KC_X,       KC_B,    KC_M,    KC_W,    KC_V,    KC_Z, KC_RSFT,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
-                      LALT_T(KC_BSPC), LGUI_T(KC_SPC), LOWER,     RAISE,  KC_ENT,
-                                           KC_TAB,  POINTER,     KC_BTN1
+  LT(LAYER_LOWER, KC_BSPC), LGUI_T(KC_SPC), LALT_T(KC_BTN1),     RAISE,  KC_ENT,
+                                 KC_TAB,  TT(LAYER_POINTER),     KC_BTN1
   //                            ╰───────────────────────────╯ ╰──────────────────╯
   ),
 
@@ -78,7 +78,7 @@ LCTL_T(KC_ESC),   KC_A,    KC_O,    NUMPAD,    ARROW,   KC_I,     KC_D,    PAREN
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_TRNS, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    KC_LBRC,   KC_HASH, KC_ASTR,   KC_P9, G(S(A(KC_C))), KC_VOLU,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_TRNS, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX,    KC_PPLS,   S(KC_EQL), KC_EQL, KC_PMNS, KC_BSLS, KC_MUTE,
+       KC_TRNS, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX,    S(KC_EQL),   KC_EQL, KC_EQL, KC_PMNS, KC_BSLS, KC_MUTE,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_TRNS, XXXXXXX, XXXXXXX, XXXXXXX, EE_CLR,  QK_BOOT,    KC_PAST,   KC_BSPC, KC_DEL, KC_MNXT, G(S(A(KC_R))), KC_VOLD,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
