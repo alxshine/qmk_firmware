@@ -30,7 +30,7 @@ enum charybdis_keymap_layers {
 
 // pointer stuff
 #define POINTING_DEVICE_ENABLE 1
-#define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
+// #define CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
 
 #ifdef CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
 #include "timer.h"
@@ -199,15 +199,15 @@ void matrix_scan_user(void) {
     }
 }
 
-layer_state_t layer_state_set_user(layer_state_t state) {
-     // if(!layer_state_cmp(state, LAYER_POINTER))
-     //     auto_pointer_layer_timer = 0;
+// layer_state_t layer_state_set_user(layer_state_t state) {
+//      // if(!layer_state_cmp(state, LAYER_POINTER))
+//      //     auto_pointer_layer_timer = 0;
 
-#        ifdef CHARYBDIS_AUTO_SNIPING_ON_LAYER
-     charybdis_set_pointer_sniping_enabled(layer_state_cmp(state, CHARYBDIS_AUTO_SNIPING_ON_LAYER));
-#        endif // CHARYBDIS_AUTO_SNIPING_ON_LAYER
-     return state;
-}
+// #        ifdef CHARYBDIS_AUTO_SNIPING_ON_LAYER
+//      charybdis_set_pointer_sniping_enabled(layer_state_cmp(state, CHARYBDIS_AUTO_SNIPING_ON_LAYER));
+// #        endif // CHARYBDIS_AUTO_SNIPING_ON_LAYER
+//      return state;
+// }
 #    endif // CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
 #endif     // POINTING_DEVICE_ENABLE
 
