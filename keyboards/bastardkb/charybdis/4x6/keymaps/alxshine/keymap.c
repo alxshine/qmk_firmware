@@ -61,7 +61,7 @@ LCTL_T(KC_ESC),   KC_A,    KC_O,    NUMPAD,    ARROW,   KC_I,     KC_D,    PAREN
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_LSFT,   KC_SCLN, KC_Q,    KC_J,    KC_K,    KC_X,       KC_B,    KC_M,    KC_W,    KC_V,    KC_Z, KC_RSFT,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
-  LT(LAYER_LOWER, KC_BSPC), LGUI_T(KC_SPC), LALT_T(KC_BTN1),     RAISE,  KC_ENT,
+  LT(LAYER_LOWER, KC_BSPC), LGUI_T(KC_SPC), LALT_T(KC_BTN1),     RAISE,  LGUI_T(KC_ENT),
                                  KC_TAB,  TT(LAYER_POINTER),     TG(LAYER_POINTER)
   //                            ╰───────────────────────────╯ ╰──────────────────╯
   ),
@@ -133,7 +133,7 @@ LCTL_T(KC_ESC),   KC_A,    KC_O,    NUMPAD,    ARROW,   KC_I,     KC_D,    PAREN
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_LCTL,    KC_LALT, KC_LALT, KC_LALT, KC_V,    KC_B,       KC_N,    KC_BSPC, KC_DEL,  KC_HOME, KC_END, KC_LALT,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
-                                   KC_LGUI, KC_SPC,   LOWER,      RAISE,  KC_ENT,
+                                   KC_BSPC, KC_LGUI,   LOWER,      RAISE,  KC_ENT,
                                            KC_LALT, KC_BSPC,     KC_DEL
   //                            ╰───────────────────────────╯ ╰──────────────────╯
   ),
